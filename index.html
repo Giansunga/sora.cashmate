@@ -1,131 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CashMate</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  <header>
-    <div class="wrapper navbar">
-      <div class="brand">CashMate</div>
-      <nav>
-        <a href="">Home</a>
-        <a href="">Send</a>
-        <a href="">Request</a>
-        <a href="">Wallet</a>
-        <a href="">Login</a>
-      </nav>
-    </div>
-  </header>
+body {
+  background-color: #6a1b9a; 
+  color: #000;
+}
 
-  <section class="intro">
-    <div class="wrapper">
-      <h1>Pay the way you want</h1>
-      <p>Send money, Pay bills, and manage your funds with ease — all in one place.</p>
-      <div class="action-buttons">
-        <a href="" class="button primary-btn">Sign Up for Free</a>
-        <a href="" class="button">Log In</a>
-      </div>
-    </div>
-  </section>
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-<section id="ad-section">
+header {
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-  <div class="ad-row">
-    <div class="ad-image left-side">
-      <img src="ad1.png" alt="Need Load Fast?">
-    </div>
-    <div class="ad-caption right-side">
-      <h2>NEED LOAD FAST?</h2>
-      <p>Say goodbye to long lines and closed stores. Our 24/7 load service lets you top-up in seconds—fast, easy, and reliable. Whether you're working late or gaming all night, you're never out of load again!</p>
-    </div>
-  </div>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <div class="ad-row reverse-row">
-    <div class="ad-image right-side">
-      <img src="ad2.png" alt="Pay Bills in Seconds!">
-    </div>
-    <div class="ad-caption left-side">
-      <h2>Pay Bills in Seconds!</h2>
-      <p>Avoid traffic and queues! Pay your utilities securely and on time — even during weekends and holidays. It’s fast, safe, and designed for your convenience. Track your payments instantly and enjoy peace of mind.</p>
-    </div>
-  </div>
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6a1b9a;
+}
 
-  <div class="ad-row">
-    <div class="ad-image left-side">
-      <img src="ad3.png" alt="Hot Promos Alert!">
-    </div>
-    <div class="ad-caption right-side">
-      <h2>Hot Promos Alert!</h2>
-      <p>Streaming? Gaming? Online classes? We’ve got the promos for you! Unlock big savings with our budget-friendly mobile data promos—no hidden charges, no guesswork. Just tap, register, and enjoy!</p>
-    </div>
-  </div>
-</section>
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
 
-  <section id="why-cashmate">
-    <h2>Why CashMate?</h2>
-    <div class="features-container">
+nav a:hover {
+  color: #6a1b9a;
+}
 
-      <div class="feature-box">
-        <h3>💸 Send Money</h3>
-        <p>Send money instantly and securely to your friends or family — anytime, anywhere.</p>
-        <img src="Send Money.png" alt="Send Money" />
-      </div>
+.intro {
+  background-color: #6a1b9a;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 
-      <div class="feature-box">
-        <h3>📥 Deposit Funds</h3>
-        <p>Top up your CashMate wallet in seconds. Hassle-free and ready when you need it.</p>
-        <img src="Deposit.png" alt="Deposit Funds" />
-      </div>
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 
-      <div class="feature-box">
-        <h3>🔄 Transfer</h3>
-        <p>Move money between accounts or send to your bank — smooth, quick, and easy.</p>
-        <img src="Banktransfer.png" alt="Transfer Funds" />
-      </div>
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
 
-      <div class="feature-box">
-        <h3>📑 Pay Bills</h3>
-        <p>From electricity to internet — pay all your bills in one place, right on your phone.</p>
-        <img src="paybills.png" alt="Pay Bills" />
-      </div>
+.action-buttons .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
 
-      <div class="feature-box">
-        <h3>📱 Mobile Load</h3>
-        <p>Buy mobile load for Globe or Smart anytime. Never run out of credits again.</p>
-        <img src="Mobile Load.png" alt="Buy Load" />
-      </div>
+.button.primary-btn {
+  background-color: #ffd600;
+  color: #000;
+}
 
-      <div class="feature-box">
-        <h3>🤝 Request Money</h3>
-        <p>Ask for payments or split bills with friends — CashMate makes it effortless.</p>
-        <img src="Request.png" alt="Request Money" />
-      </div>
+.button {
+  background-color: #fff;
+  color: #6a1b9a;
+}
 
-      <div class="feature-box">
-        <h3>🕒 Pending Requests</h3>
-        <p>Track requests from others. View and manage money requests sent to you by other users — accept or decline with ease.</p>
-        <img src="pendingrequest.png" alt="Pending Requests" />
-      </div>
+.button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
 
-      <div class="feature-box">
-        <h3>🎮 Games</h3>
-        <p>Play and enjoy mini-games inside the app. Fun + Finance? We got you.</p>
-        <img src="games.png" alt="Games" />
-      </div>
+#why-cashmate {
+  background-color: #fff;
+  padding: 4rem 1rem 6rem;
+  color: #000;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+}
 
+#why-cashmate h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #6a1b9a;
+}
 
-      <div class="feature-box">
-        <h3>📊 Transactions</h3>
-        <p>Keep track of all your transactions with detailed history, so you’re always on top of your finances.</p>
-        <img src="transactions.png" alt="Transactions" />
-      </div>
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    </div>
-  </section>
+.feature-box {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(106, 27, 154, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-</body>
-</html>
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(106, 27, 154, 0.3);
+}
+
+.feature-box h3 {
+  color: #6a1b9a;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.feature-box img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(106, 27, 154, 0.1);
+}
+
+#ad-section {
+  padding: 4rem 1rem;
+  background-color: #f3e5f5;
+  text-align: center;
+}
+
+.ad-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.reverse-row {
+  flex-direction: row-reverse;
+}
+
+.ad-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(106, 27, 154, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.ad-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.ad-image:hover img {
+  transform: scale(1.05);
+}
+
+.ad-caption {
+  flex: 1;
+  min-width: 250px;
+  max-width: 500px;
+  text-align: left;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .ad-row,
+  .reverse-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ad-caption {
+    text-align: center;
+  }
+
+  /* Mobile nav fix - keep nav links horizontal */
+  nav {
+    display: flex;
+    flex-direction: row; /* horizontal links */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  #why-cashmate h2 {
+    font-size: 2rem;
+  }
+}
