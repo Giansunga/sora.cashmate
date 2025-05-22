@@ -201,7 +201,7 @@ nav a:hover {
     text-align: center;
   }
 
-  /* Mobile nav fix - stack nav links vertically */
+
   nav {
     display: flex;
     flex-direction: column;
